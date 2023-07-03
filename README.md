@@ -50,3 +50,25 @@ Di sini saya hanya menampilkan perbedaan gambar antara gambar yang asli dengan g
 ### Save File Image
 
 Kemudian saya melakukan penyimpanan file gambar yang sudah saya hapus latar belakangnya dengan format png yang diberikan nama 'output.png'. Tetapi sebelum itu saya harus meng-convert gambarnya terlebih dahulu ke RGB dan kemudian menghapus kembali latar belakangnya menggunakan library rembg.
+
+## Sumber
+
+[PyPI - opencv-python 4.8.0.74](https://pypi.org/project/opencv-python/)
+
+[edureka! - How To Install NumPy In Python?](https://www.edureka.co/blog/install-numpy/)
+
+[finxter - PIP Install PIL/Pillow – A Helpful Illustrated Guide](https://blog.finxter.com/python-install-pil/)
+
+[PyPI - rembg 2.0.49](https://pypi.org/project/rembg/)
+
+[tutorialspoint - How to install matplotlib in Python?](https://www.tutorialspoint.com/how-to-install-matplotlib-in-python)
+
+[tom's HARDWARE - How To Remove Backgrounds From Images With Python](https://www.tomshardware.com/how-to/python-remove-image-backgrounds)
+
+[BelajarBukaCV - Deteksi Kontur menggunakan OpenCV](https://learnopencv.com/contour-detection-using-opencv-python-c/#What-are-Contours)
+
+[Kaggle - OpenCV background removal](https://www.kaggle.com/code/vadbeg/opencv-background-removal)
+
+[Kaggle - Plant Pathology, OpenCV Background Removal](https://www.kaggle.com/code/victorlouisdg/plant-pathology-opencv-background-removal)
+
+[Medium - Background removal in images using OpenCV GrabCut algorithm](https://medium.datadriveninvestor.com/background-removal-in-images-using-opencv-grabcut-algorithm-f2a35949417c)
