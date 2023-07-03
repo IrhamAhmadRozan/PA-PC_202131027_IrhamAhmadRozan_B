@@ -17,6 +17,8 @@ Lakukan instalasi library terlebih dahulu pada Command Prompt atau Terminal kali
   pip install matplotlib
 ```
 
+## Penjelasan Program
+
 ### Import library
 
 Di sini saya mengimport beberapa library yang sudah saya install sebelumnya. Library yang saya masukkan adalah library yang saya butuhkan untuk me-remove background.
