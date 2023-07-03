@@ -47,6 +47,6 @@ Di sini saya melakukan penghapusan latar belakang yang di mana akan menghilangka
 
 Di sini saya hanya menampilkan perbedaan gambar antara gambar yang asli dengan gambar yang sudah saya hapus latar belakangnya.
 
-#### Save File Image
+### Save File Image
 
 Kemudian saya melakukan penyimpanan file gambar yang sudah saya hapus latar belakangnya dengan format png yang diberikan nama 'output.png'. Tetapi sebelum itu saya harus meng-convert gambarnya terlebih dahulu ke RGB dan kemudian menghapus kembali latar belakangnya menggunakan library rembg.
