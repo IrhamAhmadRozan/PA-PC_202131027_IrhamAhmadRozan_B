@@ -1,7 +1,7 @@
 # PA-PC_202131027_IrhamAhmadRozan_B
 Projek UAS Pengolahan Citra
 
-# Remove Background
+## Remove Background
 
 Remove background image menggunakan aplikasi Jupyter Notebook.
 
