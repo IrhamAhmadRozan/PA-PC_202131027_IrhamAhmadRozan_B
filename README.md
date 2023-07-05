@@ -68,7 +68,7 @@ Kemudian saya melakukan penyimpanan file gambar yang sudah saya hapus latar bela
 
 [CoreIT - Deteksi Obyek Manusia Pada Basis Data Video Menggunakan Metode Background Subtraction Dan Operasi Morfologi](https://ejournal.uin-suska.ac.id/index.php/coreit/article/view/2391/pdf)
 
-## Sumber
+## Sumber 
 
 [PyPI - opencv-python 4.8.0.74](https://pypi.org/project/opencv-python/)
 
