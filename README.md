@@ -1,9 +1,20 @@
 # PA-PC_202131027_IrhamAhmadRozan_B
 Projek UAS Pengolahan Citra
 
-## Remove Background
+## Remove Background Teori
 
-Remove background image menggunakan aplikasi Jupyter Notebook.
+Penghapusan latar belakang atau background removal adalah proses dalam pengolahan citra yang bertujuan untuk menghilangkan latar belakang atau elemen-elemen yang tidak diinginkan dari suatu gambar, sehingga fokus utama pada gambar menjadi lebih menonjol. Proses ini biasanya dilakukan dalam konteks pengolahan citra komputer, desain grafis, pengenalan pola, dan aplikasi-aplikasi lainnya.
+
+Pada projek UAS kali ini saya membuat menggunakan program Python, terdapat beberapa library yang saya gunakan untuk melakukan background removal, seperti OpenCV, PIL (Python Imaging Library), dan rembg. Berikut adalah penjelasan mengenai penggunaan beberapa library tersebut:
+
+1. OpenCV:
+OpenCV (Open Source Computer Vision Library) adalah library populer untuk pengolahan citra dan komputerisasi pandangan komputer. Library ini menyediakan berbagai fungsi dan algoritma yang kuat untuk memanipulasi citra, termasuk background removal. Dalam OpenCV, background removal dapat dilakukan dengan menggunakan metode pengolahan citra seperti segmentasi berbasis warna atau deteksi tepi. 
+
+2. PIL (Python Imaging Library):
+PIL (Python Imaging Library) atau juga dikenal sebagai Pillow adalah library Python yang digunakan untuk memanipulasi dan memproses citra. Meskipun tidak sekuat OpenCV dalam hal pengolahan citra, PIL cukup sederhana dan mudah digunakan.
+
+3. rembg
+Fungsi rembg adalah sebuah library Python yang digunakan untuk melakukan penghapusan latar belakang pada gambar menggunakan model deep learning berbasis neural network. Library ini memanfaatkan model deep learning yang dilatih untuk memisahkan objek dari latar belakang dengan akurasi yang tinggi.
 
 ## Instalasi Library
 
@@ -50,6 +61,12 @@ Di sini saya hanya menampilkan perbedaan gambar antara gambar yang asli dengan g
 ### Save File Image
 
 Kemudian saya melakukan penyimpanan file gambar yang sudah saya hapus latar belakangnya dengan format png yang diberikan nama 'output.png'. Tetapi sebelum itu saya harus meng-convert gambarnya terlebih dahulu ke RGB dan kemudian menghapus kembali latar belakangnya menggunakan library rembg.
+
+## Jurnal Terkait
+
+[ResearchGate - Autonomous image background removal for accurate and efficient close-range photogrammetry](https://www.researchgate.net/publication/365500074_Autonomous_image_background_removal_for_accurate_and_efficient_close-range_photogrammetry)
+
+[CoreIT - Deteksi Obyek Manusia Pada Basis Data Video Menggunakan Metode Background Subtraction Dan Operasi Morfologi](https://ejournal.uin-suska.ac.id/index.php/coreit/article/view/2391/pdf)
 
 ## Sumber
 
