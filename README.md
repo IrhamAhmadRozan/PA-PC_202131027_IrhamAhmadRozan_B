@@ -1,7 +1,7 @@
 # PA-PC_202131027_IrhamAhmadRozan_B
 Projek UAS Pengolahan Citra
 
-## Remove Background Teori
+## Teori Background Removal
 
 Penghapusan latar belakang atau background removal adalah proses dalam pengolahan citra yang bertujuan untuk menghilangkan latar belakang atau elemen-elemen yang tidak diinginkan dari suatu gambar, sehingga fokus utama pada gambar menjadi lebih menonjol. Proses ini biasanya dilakukan dalam konteks pengolahan citra komputer, desain grafis, pengenalan pola, dan aplikasi-aplikasi lainnya.
 
@@ -18,6 +18,20 @@ Terdapat beberapa metode umum yang digunakan dalam penghapusan latar belakang:
 3. Metode berbasis Algoritma:
    - Metode GrabCut: Metode ini menggunakan algoritma iteratif yang menggabungkan penggunaan model warna dan perbaikan berulang untuk menghasilkan segmentasi yang lebih baik. Dalam metode ini, pengguna harus memberikan informasi awal mengenai wilayah objek dan wilayah latar belakang.
    - Metode Pembelajaran Mesin (Machine Learning-based Methods): Metode ini melibatkan penggunaan algoritma pembelajaran mesin seperti Support Vector Machines (SVM), Random Forest, atau Convolutional Neural Networks (CNN) untuk mempelajari dan memprediksi perbedaan antara objek dan latar belakang.
+  
+4. Metode Deteksi Warna (Color Detection): Metode ini melibatkan pemilihan atau deteksi warna latar belakang yang ingin dihapus. Dengan menggunakan algoritma deteksi warna, piksel-piksel yang memiliki nilai warna yang mirip dengan warna latar belakang dapat diidentifikasi dan dihapus. Namun, metode ini hanya efektif jika latar belakang memiliki warna yang konsisten dan berbeda secara signifikan dengan objek utama.
+
+Adapun teori lain yang berhubungan dengan removal background adalah background subtraction. Background subtraction (pengurangan latar belakang) adalah teknik yang digunakan dalam pengolahan citra untuk memisahkan objek yang bergerak dari latar belakang statis. Tujuan dari background subtraction adalah mengidentifikasi perubahan yang terjadi dalam citra dari bingkai ke bingkai, sehingga objek yang bergerak dapat diisolasi.
+
+Terdapat beberapa teori dasar di balik background subtraction:
+
+1. Model Latar Belakang (Background Model): Model latar belakang adalah representasi dari latar belakang statis dalam sebuah citra atau video. Model ini dapat berupa citra tunggal atau rangkaian citra yang merepresentasikan latar belakang pada suatu waktu tertentu. Model latar belakang ini diperoleh melalui proses pemodelan berdasarkan bingkai-bingkai awal yang dianggap tidak ada objek yang bergerak.
+
+2. Perbedaan Citra (Image Difference): Proses background subtraction melibatkan pengurangan citra aktual dengan model latar belakang. Hasil dari pengurangan ini adalah citra perbedaan yang menunjukkan perubahan antara citra aktual dengan model latar belakang. Piksel-piksel dalam citra perbedaan yang memiliki perbedaan nilai intensitas yang signifikan akan dianggap sebagai piksel yang berisi objek yang bergerak.
+
+3. Ambang Batas (Thresholding): Setelah citra perbedaan diperoleh, dilakukan penggunaan ambang batas untuk memisahkan piksel-piksel yang mengandung objek dari piksel-piksel yang mewakili latar belakang. Piksel-piksel dengan perbedaan intensitas yang melebihi ambang batas ditandai sebagai piksel objek, sedangkan piksel-piksel dengan perbedaan intensitas yang lebih rendah ditandai sebagai piksel latar belakang.
+
+4. Pemrosesan Lanjutan (Post-processing): Setelah pemisahan objek dan latar belakang, serangkaian langkah pemrosesan lanjutan dapat dilakukan untuk memperbaiki hasil dan menghilangkan noise atau kesalahan yang mungkin muncul. Langkah-langkah ini dapat mencakup pemrosesan morfologi matematika, penggabungan atau pemisahan objek yang terfragmentasi, dan penyaringan untuk menghilangkan noise atau objek kecil yang tidak relevan.
 
 Pada projek UAS kali ini saya membuat menggunakan program Python, terdapat beberapa library yang saya gunakan untuk melakukan background removal, seperti OpenCV, PIL (Python Imaging Library), dan rembg. Berikut adalah penjelasan mengenai penggunaan beberapa library tersebut:
 
