@@ -5,6 +5,20 @@ Projek UAS Pengolahan Citra
 
 Penghapusan latar belakang atau background removal adalah proses dalam pengolahan citra yang bertujuan untuk menghilangkan latar belakang atau elemen-elemen yang tidak diinginkan dari suatu gambar, sehingga fokus utama pada gambar menjadi lebih menonjol. Proses ini biasanya dilakukan dalam konteks pengolahan citra komputer, desain grafis, pengenalan pola, dan aplikasi-aplikasi lainnya.
 
+Terdapat beberapa metode umum yang digunakan dalam penghapusan latar belakang:
+
+1. Metode berbasis Ambang (Threshold-based Method):
+   - Metode Thresholding: Metode ini melibatkan penggunaan ambang batas untuk memisahkan piksel objek dan latar belakang. Dengan mengubah gambar menjadi citra biner menggunakan ambang batas yang sesuai, piksel yang melebihi ambang batas dianggap sebagai bagian objek, sementara piksel yang kurang dari ambang batas dianggap sebagai latar belakang.
+   - Metode Adaptive Thresholding: Metode ini serupa dengan metode thresholding, tetapi ambang batasnya disesuaikan secara adaptif berdasarkan karakteristik lokal di sekitar setiap piksel. Hal ini memungkinkan penyesuaian yang lebih baik terhadap variasi intensitas dalam citra.
+
+2. Metode berbasis Segmentasi:
+   - Metode Segmentasi Berdasarkan Pewarnaan (Color-based Segmentation): Metode ini memisahkan objek dan latar belakang berdasarkan perbedaan warna. Pada citra berwarna, ruang warna seperti RGB atau HSV digunakan untuk menentukan batasan warna antara objek dan latar belakang.
+   - Metode Segmentasi Berbasis Tekstur (Texture-based Segmentation): Metode ini memanfaatkan perbedaan tekstur antara objek dan latar belakang. Fitur tekstur seperti filter Gabor, transformasi wavelet, atau matriks ko-occurance (co-occurrence matrix) dapat digunakan untuk membedakan antara objek dan latar belakang.
+
+3. Metode berbasis Algoritma:
+   - Metode GrabCut: Metode ini menggunakan algoritma iteratif yang menggabungkan penggunaan model warna dan perbaikan berulang untuk menghasilkan segmentasi yang lebih baik. Dalam metode ini, pengguna harus memberikan informasi awal mengenai wilayah objek dan wilayah latar belakang.
+   - Metode Pembelajaran Mesin (Machine Learning-based Methods): Metode ini melibatkan penggunaan algoritma pembelajaran mesin seperti Support Vector Machines (SVM), Random Forest, atau Convolutional Neural Networks (CNN) untuk mempelajari dan memprediksi perbedaan antara objek dan latar belakang.
+
 Pada projek UAS kali ini saya membuat menggunakan program Python, terdapat beberapa library yang saya gunakan untuk melakukan background removal, seperti OpenCV, PIL (Python Imaging Library), dan rembg. Berikut adalah penjelasan mengenai penggunaan beberapa library tersebut:
 
 1. OpenCV:
